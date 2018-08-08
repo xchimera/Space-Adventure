@@ -29,7 +29,6 @@ public class UIMultiplayerHandler : MonoBehaviour {
 		//if (value.Replace(" ", "") == "")
 		//	return;
 
-		// #Important
 		PhotonNetwork.playerName = value;
 
 
