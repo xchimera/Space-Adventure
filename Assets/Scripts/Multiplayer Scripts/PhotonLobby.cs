@@ -11,7 +11,6 @@ public class PhotonLobby : Photon.PunBehaviour
 
 	private void Start()
 	{
-		Connect();
 	}
 	#region Public Methods
 
@@ -22,19 +21,20 @@ public class PhotonLobby : Photon.PunBehaviour
 			SceneManager.LoadScene(0);
 			return;
 		}
-		
-		PhotonNetwork.JoinRandomRoom();
+
+		if(!PhotonNetwork.inRoom)
+			PhotonNetwork.JoinRandomRoom();
 	}
 
 
-	public void CreateRoom()
+	void CreateRoom()
 	{
 		Debug.Log("Lobby: Creating room without name");
 
 		PhotonNetwork.CreateRoom(null, new RoomOptions() { MaxPlayers = maxPlayersPerRoom }, null);
 	}
 
-	public void CreateRoom(string roomName)
+	void CreateRoom(string roomName)
 	{
 		Debug.Log("Lobby: Creating room with name: " + roomName);
 
@@ -52,7 +52,7 @@ public class PhotonLobby : Photon.PunBehaviour
 		//Otherwise we could loop
 
 			//Try to join an existing room. If none is available, OnPhotonRandomJoinFailed() is called
-			PhotonNetwork.JoinRandomRoom();
+			//PhotonNetwork.JoinRandomRoom();
 	}
 
 	public override void OnPhotonRandomJoinFailed(object[] codeAndMsg)

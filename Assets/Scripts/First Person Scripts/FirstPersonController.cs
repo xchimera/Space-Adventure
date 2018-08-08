@@ -33,7 +33,7 @@ public class FirstPersonController : MonoBehaviour {
 
 		if (moveRotation != Quaternion.identity)
 		{
-			transform.forward = new Vector3(0, horizontal, 0);
+			transform.forward = new Vector3(0, 0, 0);
 		}
 
 
