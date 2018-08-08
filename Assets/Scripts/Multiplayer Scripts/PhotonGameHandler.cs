@@ -26,6 +26,13 @@ public class PhotonGameHandler : Photon.PunBehaviour {
 		playerConnected.Raise();
 	}
 
+	public override void OnJoinedRoom()
+	{
+		Debug.Log("PhotonGameHandler: joined room");
+		playerConnected.Raise();
+	}
+
+
 	public override void OnDisconnectedFromPhoton()
 	{
 		Debug.Log("PhotonGameHandler: Player disconnected:" );

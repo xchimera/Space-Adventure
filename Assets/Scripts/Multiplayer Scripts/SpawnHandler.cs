@@ -39,6 +39,7 @@ public class SpawnHandler : Photon.PunBehaviour {
 		GameObject playerObject = PhotonNetwork.Instantiate(this.playerPrefab.name, startPos, Quaternion.identity, 0);
 
 		playerObject.transform.parent = cockpitMesh.transform;
+		playerObject.transform.localPosition = new Vector3(15, 1, 0);
 
 
 	}
