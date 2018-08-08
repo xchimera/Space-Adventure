@@ -347,6 +347,11 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &664723727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1333576198327778, guid: 9ad779746c150af43a49c7111a9eae44,
+    type: 2}
+  m_PrefabInternal: {fileID: 1637835733}
 --- !u!1 &701093873
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,19 +691,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4353904374884668, guid: 9ad779746c150af43a49c7111a9eae44, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.23964798
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4353904374884668, guid: 9ad779746c150af43a49c7111a9eae44, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4353904374884668, guid: 9ad779746c150af43a49c7111a9eae44, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4353904374884668, guid: 9ad779746c150af43a49c7111a9eae44, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.9708599
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4353904374884668, guid: 9ad779746c150af43a49c7111a9eae44, type: 2}
       propertyPath: m_LocalPosition.x
@@ -706,15 +711,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4353904374884668, guid: 9ad779746c150af43a49c7111a9eae44, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.987
+      value: 0.857
       objectReference: {fileID: 0}
     - target: {fileID: 4353904374884668, guid: 9ad779746c150af43a49c7111a9eae44, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.821
+      value: 0.025
       objectReference: {fileID: 0}
     - target: {fileID: 4353904374884668, guid: 9ad779746c150af43a49c7111a9eae44, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 27.732002
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1901455143483630, guid: 9ad779746c150af43a49c7111a9eae44, type: 2}
       propertyPath: m_IsActive
@@ -756,6 +761,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rotationSpeed: 30
+  player: {fileID: 1637835734}
+  playerCamera: {fileID: 664723727}
 --- !u!136 &1637835742
 CapsuleCollider:
   m_ObjectHideFlags: 0

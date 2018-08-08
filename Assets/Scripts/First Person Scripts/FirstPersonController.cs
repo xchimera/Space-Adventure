@@ -5,13 +5,14 @@ using UnityEngine;
 public class FirstPersonController : MonoBehaviour {
 
 	public float speed = 5f;
-	public float rotationSpeed = 3f;
+    public float rotationSpeed;
+    public GameObject player;
+    public GameObject playerCamera;
 
-
-	Actions actions;
+    Actions actions;
 	Vector3 movementInput;
-	Quaternion moveRotation = Quaternion.identity;
-	bool isGrounded = true;
+
+    bool isGrounded = true;
 
 	Rigidbody body;
 
@@ -19,40 +20,32 @@ public class FirstPersonController : MonoBehaviour {
 	void Start () {
 		actions = gameObject.GetComponent<Actions>();
 		body = gameObject.GetComponent<Rigidbody>();
-	}
+        rotationSpeed = 50f;
+    }
 	
 	// Update is called once per frame
 	void Update () {
-
 		movementInput = Vector3.zero;
-		movementInput.z = Input.GetAxis("Vertical");
-
 		float horizontal = Input.GetAxis("Horizontal");
 
-		moveRotation = Quaternion.Euler(0, horizontal * rotationSpeed * Time.deltaTime, 0);
+        player.transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0) * Time.deltaTime * rotationSpeed);
+        playerCamera.transform.Rotate(new Vector3(-Input.GetAxis("Mouse Y"), 0, 0) * Time.deltaTime * rotationSpeed);
 
-		if (moveRotation != Quaternion.identity)
+
+        if (movementInput != Vector3.zero)
 		{
-			transform.forward = new Vector3(0, 0, 0);
-		}
-
-
-		if (movementInput != Vector3.zero)
-		{
-			//transform.forward = movementInput;
 			actions.Run();
 		}
 		else
 		{
 			actions.Stay();
 		}
-
-
 	}
 
 	private void FixedUpdate()
 	{
-		body.MovePosition(body.position + movementInput * speed * Time.deltaTime);
-		body.MoveRotation(body.rotation * moveRotation);
+        if (Input.GetKey("w")) {
+            body.MovePosition(body.position + transform.forward * speed * Time.deltaTime);
+        }
 	}
 }
