@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: d2b69d6e15f56e74997a139026a7ee7f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: back_door
+    100002: body
+    100004: cannon
+    100006: canon_stand
+    100008: cockpit_frame_inside
+    100010: cockpit_frame_outside
+    100012: cockpit_glass_inside
+    100014: cockpit_glass_outside
+    100016: cockpit_metal
+    100018: door_cockpit_left
+    100020: door_cockpit_right
+    100022: landing_gear
+    100024: landing_gear_front
+    100026: //RootNode
+    100028: tail
+    100030: tail-end
+    100032: turbines_back
+    100034: turbines_front
+    100036: Wings
+    400000: back_door
+    400002: body
+    400004: cannon
+    400006: canon_stand
+    400008: cockpit_frame_inside
+    400010: cockpit_frame_outside
+    400012: cockpit_glass_inside
+    400014: cockpit_glass_outside
+    400016: cockpit_metal
+    400018: door_cockpit_left
+    400020: door_cockpit_right
+    400022: landing_gear
+    400024: landing_gear_front
+    400026: //RootNode
+    400028: tail
+    400030: tail-end
+    400032: turbines_back
+    400034: turbines_front
+    400036: Wings
+    2100000: gun__canon
+    2100002: Material_008__canon
+    2100004: Material_009__canon_bottom
+    2100006: glow
+    2100008: not_glow
+    2100010: metal
+    2100012: unnamed
+    2100014: Material_006
+    2100016: Material_005
+    2100018: Material_004
+    2100020: glass
+    2100022: Material_003
+    2100024: Material_002
+    2100026: Material_001__Untitled
+    2100028: Material
+    2100030: glass_001
+    2100032: Material_010
+    2100034: glow_001
+    2100036: not_glow_001
+    2300000: back_door
+    2300002: body
+    2300004: cannon
+    2300006: canon_stand
+    2300008: cockpit_frame_inside
+    2300010: cockpit_frame_outside
+    2300012: cockpit_glass_inside
+    2300014: cockpit_glass_outside
+    2300016: cockpit_metal
+    2300018: door_cockpit_left
+    2300020: door_cockpit_right
+    2300022: landing_gear
+    2300024: landing_gear_front
+    2300026: tail
+    2300028: tail-end
+    2300030: turbines_back
+    2300032: turbines_front
+    2300034: Wings
+    3300000: back_door
+    3300002: body
+    3300004: cannon
+    3300006: canon_stand
+    3300008: cockpit_frame_inside
+    3300010: cockpit_frame_outside
+    3300012: cockpit_glass_inside
+    3300014: cockpit_glass_outside
+    3300016: cockpit_metal
+    3300018: door_cockpit_left
+    3300020: door_cockpit_right
+    3300022: landing_gear
+    3300024: landing_gear_front
+    3300026: tail
+    3300028: tail-end
+    3300030: turbines_back
+    3300032: turbines_front
+    3300034: Wings
+    4300000: cannon
+    4300002: canon_stand
+    4300004: turbines_back
+    4300006: cockpit_frame_inside
+    4300008: door_cockpit_right
+    4300010: back_door
+    4300012: landing_gear_front
+    4300014: landing_gear
+    4300016: cockpit_glass_inside
+    4300018: Wings
+    4300020: tail-end
+    4300022: cockpit_metal
+    4300024: tail
+    4300026: body
+    4300028: door_cockpit_left
+    4300030: cockpit_glass_outside
+    4300032: cockpit_frame_outside
+    4300034: turbines_front
+    7400000: Default Take
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
