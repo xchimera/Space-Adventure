@@ -5,10 +5,12 @@ using UnityEngine;
 public class FirstPersonController : MonoBehaviour {
 
 	public float speed = 5f;
+	public float rotationSpeed = 3f;
+
 
 	Actions actions;
 	Vector3 movementInput;
-	Quaternion moveRotation;
+	Quaternion moveRotation = Quaternion.identity;
 	bool isGrounded = true;
 
 	Rigidbody body;
@@ -25,11 +27,14 @@ public class FirstPersonController : MonoBehaviour {
 		movementInput = Vector3.zero;
 		movementInput.z = Input.GetAxis("Vertical");
 
-		moveRotation = Quaternion.Euler(0, Input.GetAxis("Horizontal") * Time.deltaTime, 0);
+		float horizontal = Input.GetAxis("Horizontal");
 
+		moveRotation = Quaternion.Euler(0, horizontal * rotationSpeed * Time.deltaTime, 0);
 
-		var a = Quaternion.identity;
-		
+		if (moveRotation != Quaternion.identity)
+		{
+			transform.forward = new Vector3(0, horizontal, 0);
+		}
 
 
 		if (movementInput != Vector3.zero)
