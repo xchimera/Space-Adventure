@@ -6,8 +6,8 @@ public class FirstPersonController : MonoBehaviour {
 
 	public float speed = 5f;
     public float rotationSpeed;
-    public GameObject player;
-    public GameObject playerCamera;
+    public Camera cameraPrefab;
+    Camera playerCamera;
 
     Actions actions;
 	Vector3 movementInput;
@@ -22,22 +22,24 @@ public class FirstPersonController : MonoBehaviour {
 		body = gameObject.GetComponent<Rigidbody>();
         rotationSpeed = 50f;
 
-
-        /*If camera is not child, create camera*/
-
-
+        /****
+        * Check if camera exists
+        ****/
+        if (Camera.allCamerasCount == 0) {
+            //Instantiate camera
+            playerCamera = Instantiate(cameraPrefab, transform, true);
+            playerCamera.transform.localPosition = new Vector3(0,0.857f,0.025f);
+            playerCamera.transform.rotation = Quaternion.Euler(0,0,0);
+        }
+        
 
     }
 	
 	// Update is called once per frame
 	void Update () {
 		movementInput = Vector3.zero;
-
-
-
-        player.transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0) * Time.deltaTime * rotationSpeed);
+        transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0) * Time.deltaTime * rotationSpeed);
         playerCamera.transform.Rotate(new Vector3(-Input.GetAxis("Mouse Y"), 0, 0) * Time.deltaTime * rotationSpeed);
-
 
         if (movementInput != Vector3.zero)
 		{
