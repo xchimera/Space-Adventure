@@ -21,12 +21,19 @@ public class FirstPersonController : MonoBehaviour {
 		actions = gameObject.GetComponent<Actions>();
 		body = gameObject.GetComponent<Rigidbody>();
         rotationSpeed = 50f;
+
+
+        /*If camera is not child, create camera*/
+
+
+
     }
 	
 	// Update is called once per frame
 	void Update () {
 		movementInput = Vector3.zero;
-		float horizontal = Input.GetAxis("Horizontal");
+
+
 
         player.transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0) * Time.deltaTime * rotationSpeed);
         playerCamera.transform.Rotate(new Vector3(-Input.GetAxis("Mouse Y"), 0, 0) * Time.deltaTime * rotationSpeed);
