@@ -1,0 +1,194 @@
+fileFormatVersion: 2
+guid: 2778557f958548846be9e5e8fe224777
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: back_door
+    100002: body
+    100004: Circle
+    100006: Circle_001
+    100008: Circle_002
+    100010: cockpit
+    100012: cockpit_001
+    100014: cockpit_002
+    100016: cockpit_003
+    100018: cockpit_004
+    100020: door_cockpit_left
+    100022: door_cockpit_right
+    100024: landing_gear
+    100026: landing_gear_front
+    100028: //RootNode
+    100030: tail
+    100032: tail-end
+    100034: Wings
+    400000: back_door
+    400002: body
+    400004: Circle
+    400006: Circle_001
+    400008: Circle_002
+    400010: cockpit
+    400012: cockpit_001
+    400014: cockpit_002
+    400016: cockpit_003
+    400018: cockpit_004
+    400020: door_cockpit_left
+    400022: door_cockpit_right
+    400024: landing_gear
+    400026: landing_gear_front
+    400028: //RootNode
+    400030: tail
+    400032: tail-end
+    400034: Wings
+    2100000: glow
+    2100002: not_glow
+    2100004: metal
+    2100006: unnamed
+    2100008: Material_006
+    2100010: Material_005
+    2100012: Material_004
+    2100014: glass
+    2100016: Material_003
+    2100018: Material_002
+    2100020: Material_001
+    2100022: Material
+    2100024: glass_001
+    2100026: metal_001
+    2100028: glow_001
+    2100030: not_glow_001
+    2300000: back_door
+    2300002: body
+    2300004: Circle
+    2300006: Circle_001
+    2300008: Circle_002
+    2300010: cockpit
+    2300012: cockpit_001
+    2300014: cockpit_002
+    2300016: cockpit_003
+    2300018: cockpit_004
+    2300020: door_cockpit_left
+    2300022: door_cockpit_right
+    2300024: landing_gear
+    2300026: landing_gear_front
+    2300028: tail
+    2300030: tail-end
+    2300032: Wings
+    3300000: back_door
+    3300002: body
+    3300004: Circle
+    3300006: Circle_001
+    3300008: Circle_002
+    3300010: cockpit
+    3300012: cockpit_001
+    3300014: cockpit_002
+    3300016: cockpit_003
+    3300018: cockpit_004
+    3300020: door_cockpit_left
+    3300022: door_cockpit_right
+    3300024: landing_gear
+    3300026: landing_gear_front
+    3300028: tail
+    3300030: tail-end
+    3300032: Wings
+    4300000: Circle
+    4300002: cockpit_003
+    4300004: door_cockpit_right
+    4300006: back_door
+    4300008: landing_gear_front
+    4300010: landing_gear
+    4300012: cockpit_001
+    4300014: Wings
+    4300016: tail-end
+    4300018: cockpit
+    4300020: tail
+    4300022: body
+    4300024: door_cockpit_left
+    4300026: cockpit_002
+    4300028: cockpit_004
+    4300030: Circle_001
+    4300032: Circle_002
+    7400000: Default Take
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
