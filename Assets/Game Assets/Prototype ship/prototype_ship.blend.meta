@@ -21,6 +21,15 @@ ModelImporter:
     100030: tail
     100032: tail-end
     100034: Wings
+    100036: cannon
+    100038: canon_stand
+    100040: cockpit_frame_inside
+    100042: cockpit_frame_outside
+    100044: cockpit_glass_inside
+    100046: cockpit_glass_outside
+    100048: cockpit_metal
+    100050: turbines_back
+    100052: turbines_front
     400000: back_door
     400002: body
     400004: Circle
@@ -39,6 +48,15 @@ ModelImporter:
     400030: tail
     400032: tail-end
     400034: Wings
+    400036: cannon
+    400038: canon_stand
+    400040: cockpit_frame_inside
+    400042: cockpit_frame_outside
+    400044: cockpit_glass_inside
+    400046: cockpit_glass_outside
+    400048: cockpit_metal
+    400050: turbines_back
+    400052: turbines_front
     2100000: glow
     2100002: not_glow
     2100004: metal
@@ -55,6 +73,11 @@ ModelImporter:
     2100026: metal_001
     2100028: glow_001
     2100030: not_glow_001
+    2100032: gun__canon
+    2100034: Material_008__canon
+    2100036: Material_009__canon_bottom
+    2100038: Material_001__Untitled
+    2100040: Material_010
     2300000: back_door
     2300002: body
     2300004: Circle
@@ -72,6 +95,15 @@ ModelImporter:
     2300028: tail
     2300030: tail-end
     2300032: Wings
+    2300034: cannon
+    2300036: canon_stand
+    2300038: cockpit_frame_inside
+    2300040: cockpit_frame_outside
+    2300042: cockpit_glass_inside
+    2300044: cockpit_glass_outside
+    2300046: cockpit_metal
+    2300048: turbines_back
+    2300050: turbines_front
     3300000: back_door
     3300002: body
     3300004: Circle
@@ -89,6 +121,15 @@ ModelImporter:
     3300028: tail
     3300030: tail-end
     3300032: Wings
+    3300034: cannon
+    3300036: canon_stand
+    3300038: cockpit_frame_inside
+    3300040: cockpit_frame_outside
+    3300042: cockpit_glass_inside
+    3300044: cockpit_glass_outside
+    3300046: cockpit_metal
+    3300048: turbines_back
+    3300050: turbines_front
     4300000: Circle
     4300002: cockpit_003
     4300004: door_cockpit_right
@@ -106,6 +147,15 @@ ModelImporter:
     4300028: cockpit_004
     4300030: Circle_001
     4300032: Circle_002
+    4300034: cannon
+    4300036: canon_stand
+    4300038: turbines_back
+    4300040: cockpit_frame_inside
+    4300042: cockpit_glass_inside
+    4300044: cockpit_metal
+    4300046: cockpit_glass_outside
+    4300048: cockpit_frame_outside
+    4300050: turbines_front
     6400000: back_door
     6400002: body
     6400004: Circle
@@ -123,6 +173,15 @@ ModelImporter:
     6400028: tail
     6400030: tail-end
     6400032: Wings
+    6400034: cannon
+    6400036: canon_stand
+    6400038: cockpit_frame_inside
+    6400040: cockpit_frame_outside
+    6400042: cockpit_glass_inside
+    6400044: cockpit_glass_outside
+    6400046: cockpit_metal
+    6400048: turbines_back
+    6400050: turbines_front
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs
@@ -137,6 +196,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Material_001
     second: {fileID: 2100000, guid: 3bbe592799d527647a2779bb5927fdd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_001__Untitled
+    second: {fileID: 2100000, guid: 78d8528d1a645d341aa8cc6bc46d1ae2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -165,6 +229,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Material_008__canon
+    second: {fileID: 2100000, guid: 6fd896bb3f87f3f41a237a8a404ed8f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_009__canon_bottom
+    second: {fileID: 2100000, guid: 3fb5f001c41a5624ab978ac9c4080049, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_010
+    second: {fileID: 2100000, guid: 107773994450e1643abf5cdca15de179, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: glass
     second: {fileID: 2100000, guid: 8a196d2a47e79954ab24c10d3dd61f5f, type: 2}
   - first:
@@ -182,6 +261,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: glow_001
     second: {fileID: 2100000, guid: 7576e45799e2f9643be8c319fcdbe1b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gun__canon
+    second: {fileID: 2100000, guid: 38524534410d6074cac78319a8d6170e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
