@@ -4,19 +4,34 @@ using UnityEngine;
 
 public class PhotonGameHandler : Photon.PunBehaviour {
 
-	public GameObject playerPrefab;
+	SpawnHandler spawnHandler;
 
+	public GameEvent playerConnected;
+	public GameEvent playerDisconnected;
 
-	#region Unity Methods
 	private void Start()
 	{
-
-		if (playerPrefab == null)
-		{
-			Debug.LogError("<Color=Red><a>Missing</a></Color> playerPrefab Reference. Please set it up in GameObject 'Game Manager'", this);
-			return;
-		}
+		spawnHandler = gameObject.GetComponent<SpawnHandler>();
 	}
-	#endregion
+
+	public override void OnPhotonPlayerConnected(PhotonPlayer newPlayer)
+	{
+		Debug.Log("MultiplayerManager: Player connected: " + newPlayer.NickName);
+
+		if (PhotonNetwork.isMasterClient)
+		{
+			Debug.Log("MultiplayerManager: Client is MasterClient");
+		}
+		Debug.Log("PhotonGameHandler: Player connected:" + newPlayer.NickName);
+		playerConnected.Raise();
+	}
+
+	public override void OnDisconnectedFromPhoton()
+	{
+		Debug.Log("PhotonGameHandler: Player disconnected:" );
+		playerDisconnected.Raise();
+	}
+
+
 
 }
