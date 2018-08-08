@@ -500,6 +500,7 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabAsset: 0
+<<<<<<< HEAD
 --- !u!1001 &1814638532
 Prefab:
   m_ObjectHideFlags: 0
@@ -542,6 +543,52 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2778557f958548846be9e5e8fe224777, type: 3}
   m_IsPrefabAsset: 0
+=======
+--- !u!1 &1529659677 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1557500339300010, guid: 62b2991f58f89ab48a4419c2b6abc99a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1159353808}
+--- !u!114 &1529659678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1529659677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab9fd1f0b23e2447a03ddba27a4c67f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mousePosition: {x: 0, y: 0, z: 0}
+  mouseDeadZone: 0
+  thrust: {x: 0, y: 0, z: 0}
+  throttle: 100
+  throttleAmount: 0.25
+  maxThrottle: 4
+  minThrottle: -2
+  pitchStrength: 0.06
+  yawStrength: 0.06
+  rollStrength: 0.06
+  flightAssist: 1
+  impulseMode: 0
+  impulseCoolDown: 3
+--- !u!54 &1529659679
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1529659677}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+>>>>>>> 8a14a4fbe7038ae6e5e45206d61886ca7ba907e3
 --- !u!1 &2146977422
 GameObject:
   m_ObjectHideFlags: 0
