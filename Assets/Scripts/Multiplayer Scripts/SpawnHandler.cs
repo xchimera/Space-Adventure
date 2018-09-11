@@ -7,6 +7,7 @@ public class SpawnHandler : Photon.PunBehaviour {
 	public GameObject playerPrefab;
 
 	public GameObject cockpitMesh;
+	public Transform[] spawns;
 
 	#region Unity Methods
 	private void Start()
@@ -26,10 +27,12 @@ public class SpawnHandler : Photon.PunBehaviour {
 
 		Vector3 startPos;
 
-		if (PhotonNetwork.playerList.Length == 0)
-			startPos = new Vector3(-17f, 0, 0);
-		else if (PhotonNetwork.playerList.Length == 1)
-			startPos = new Vector3(-13, 0, 0);
+		if (PhotonNetwork.playerList.Length == 1)
+			startPos = spawns[0].position;
+		//startPos = new Vector3(-17f, 0, 0);
+		else if (PhotonNetwork.playerList.Length == 2)
+			startPos = spawns[1].position;
+		//startPos = new Vector3(-13, 0, 0);
 
 		else
 			startPos = new Vector3(0, 0, 0);
@@ -39,7 +42,11 @@ public class SpawnHandler : Photon.PunBehaviour {
 		GameObject playerObject = PhotonNetwork.Instantiate(this.playerPrefab.name, startPos, Quaternion.identity, 0);
 
 		playerObject.transform.parent = cockpitMesh.transform;
-		playerObject.transform.localPosition = new Vector3(15, 1, 0);
+
+		playerObject.transform.position = startPos;
+		//playerObject.GetComponent<Camera>().enabled = true;
+
+		//playerObject.transform.localPosition = new Vector3(15, 1, 0);
 
 
 	}
