@@ -47,7 +47,7 @@ public class FirstPersonController : Photon.PunBehaviour, IPunObservable
 	// Update is called once per frame
 	void Update()
 	{
-		if (!photonView.isMine)
+		if (photonView.isMine == false)
 		{
 			return;
 		}
@@ -68,6 +68,11 @@ public class FirstPersonController : Photon.PunBehaviour, IPunObservable
 
 	private void FixedUpdate()
 	{
+		if (photonView.isMine == false)
+		{
+			return;
+		}
+
 		if (Input.GetKey("w"))
 		{
 			body.MovePosition(body.position + transform.forward * speed * Time.deltaTime);
