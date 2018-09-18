@@ -15,13 +15,19 @@ public class FirstPersonController : Photon.PunBehaviour, IPunObservable
 	Vector3 movementInput;
 
 	bool isGrounded = true;
-	Text eventTexts;
 
 	Rigidbody body;
 
 	private void Awake()
 	{
-		eventTexts = GameObject.FindObjectOfType<Text>();
+		if (photonView.isMine)
+		{
+			playerCamera.gameObject.SetActive(true);
+		}
+		else
+		{
+			playerCamera.gameObject.SetActive(false);
+		}
 
 	}
 
@@ -32,14 +38,14 @@ public class FirstPersonController : Photon.PunBehaviour, IPunObservable
 		body = gameObject.GetComponent<Rigidbody>();
 		//rotationSpeed = 50f;
 
-		if (photonView.isMine)
-		{
-			playerCamera.gameObject.SetActive(true);
-		}
-		else
-		{
-			playerCamera.gameObject.SetActive(false);
-		}
+		//if (photonView.isMine)
+		//{
+		//	playerCamera.gameObject.SetActive(true);
+		//}
+		//else
+		//{
+		//	playerCamera.gameObject.SetActive(false);
+		//}
 
 
 	}
@@ -95,7 +101,6 @@ public class FirstPersonController : Photon.PunBehaviour, IPunObservable
 	public void EnterShip(int shipViewId)
 	{
 		var ships = GameObject.FindGameObjectsWithTag("PlayableShip");
-		eventTexts.text += "Entering ship. ships length: " + ships.Length + " \n";
 		GameObject shipToEnter = null;
 
 		foreach (var ship in ships)
@@ -107,6 +112,5 @@ public class FirstPersonController : Photon.PunBehaviour, IPunObservable
 		}
 		
 		this.transform.parent = shipToEnter.transform;
-		eventTexts.text += "Done entering ship \n";
 	}
 }

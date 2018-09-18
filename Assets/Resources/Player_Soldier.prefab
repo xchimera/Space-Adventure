@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 81899850331692852}
   m_Layer: 0
   m_Name: playerCam
-  m_TagString: Untagged
+  m_TagString: PlayerCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -703,12 +703,13 @@ GameObject:
   - component: {fileID: 114705253780366174}
   - component: {fileID: 54972476123907198}
   - component: {fileID: 136380742771034372}
+  - component: {fileID: 114868617474093088}
   - component: {fileID: 114059059943858204}
   - component: {fileID: 114328163695772446}
   - component: {fileID: 114275437272811590}
   m_Layer: 0
   m_Name: Player_Soldier
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -958,8 +959,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1901455143483630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.336155, y: -120.721565, z: 55.21049}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4093298452928374}
   - {fileID: 4893234936285770}
@@ -1720,6 +1721,18 @@ MonoBehaviour:
   speed: 5
   rotationSpeed: 50
   playerCamera: {fileID: 20732574181973328}
+--- !u!114 &114868617474093088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1901455143483630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d86e1158f078b434a8d38734c294567c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactText: {fileID: 0}
 --- !u!136 &136380742771034372
 CapsuleCollider:
   m_ObjectHideFlags: 1

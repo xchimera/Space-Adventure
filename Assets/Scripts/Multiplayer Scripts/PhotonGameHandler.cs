@@ -38,7 +38,6 @@ public class PhotonGameHandler : Photon.PunBehaviour, IPunObservable {
 	{
 		Debug.Log("PhotonGameHandler: joined room");
 		eventTexts.text += "Joined room \n";
-		//playerConnected.Raise();
 
 
 		//spawn
@@ -59,26 +58,15 @@ public class PhotonGameHandler : Photon.PunBehaviour, IPunObservable {
 		Vector3 camPos = new Vector3(0, 0.857f, 0.025f);
 
 		GameObject playerObject = PhotonNetwork.Instantiate(this.playerPrefab.name, startPos, Quaternion.identity, 0);
-		eventTexts.text += (playerObject != null ? "playerobject findes" : "playerObject findes ikke");
-		eventTexts.text += "\n";
 
 		var shipViewId = ship.GetPhotonView().viewID;
 
 		FirstPersonController firstPersonController = playerObject.GetComponent<FirstPersonController>();
-		eventTexts.text += "Entering ship \n";
 
 		playerObject.transform.position = startPos;
-		firstPersonController.photonView.RPC("EnterShip", PhotonTargets.AllBuffered, shipViewId);
-		eventTexts.text += "Done entering ship \n";
-		//playerObject.transform.parent = ship.transform;
+		firstPersonController.photonView.RPC("EnterShip", PhotonTargets.AllBuffered, shipViewId);	
 
-		//if (playerObject != null)
-		//{
-			eventTexts.text += "parent: " + playerObject.transform.parent.name + "\n";
-			eventTexts.text += "pos: " + playerObject.transform.position.ToString() + "\n";
-			if (GameObject.Find("Player_Soldier(Clone)") != null)
-				eventTexts.text += "gameobject exists \n";
-		//}
+		playerConnected.Raise();
 
 	}
 
