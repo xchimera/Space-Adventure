@@ -6,6 +6,13 @@ public class HandleCameras : MonoBehaviour {
 
 	public Camera shipOutsideCamera;
 	Camera playerCamera;
+	GameObject player;
+	GameObject ship;
+
+	private void Start()
+	{
+		ship = shipOutsideCamera.GetComponentInParent<Transform>().gameObject;
+	}
 
 	public void DisableAllCameras()
 	{
@@ -20,6 +27,8 @@ public class HandleCameras : MonoBehaviour {
 		DisableAllCameras();
 		if(shipOutsideCamera != null)
 			shipOutsideCamera.gameObject.SetActive(true);
+		DisablePlayerScripts();
+		EnablePlayerScripts();
 	}
 
 	public void EnablePlayerCamera()
@@ -31,11 +40,37 @@ public class HandleCameras : MonoBehaviour {
 
 	public void FindAndSetPlayerCamera()
 	{
-		//var player = GameObject.FindGameObjectWithTag("Player");
 		var playerCamera = GameObject.FindGameObjectWithTag("PlayerCamera");
-		//var playerCamera = player.gameObject.GetComponentInChildren<Camera>();
-		if(playerCamera != null)
+		if (playerCamera != null)
+		{
 			this.playerCamera = playerCamera.GetComponent<Camera>();
+			player = playerCamera.transform.parent.gameObject;
+		}
+	}
+
+	private void DisablePlayerScripts()
+	{
+		var fpc = player.GetComponent<FirstPersonController>();
+		fpc.enabled = false;
+		player.GetComponent<InteractScript>().Disable();
+	}
+
+	private void EnablePlayerScripts()
+	{
+		player.GetComponent<FirstPersonController>().enabled = true;
+		player.GetComponent<InteractScript>().enabled = true;
+		
+
+	}
+
+	private void DisableShipScripts()
+	{
+
+	}
+
+	private void EnableShipScripts()
+	{
+
 	}
 
 }

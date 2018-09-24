@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interactable : MonoBehaviour, IInteractable {
+public class CockpitInteractable : MonoBehaviour, IInteractable {
 	[SerializeField]
 	private string _text;
+	[SerializeField]
+	private GameEvent changeToShipCameraEvent;
 
 	public string Text
 	{
@@ -16,5 +18,10 @@ public class Interactable : MonoBehaviour, IInteractable {
 		{
 			_text = value;
 		}
+	}
+
+	public void Interact()
+	{
+		changeToShipCameraEvent.Raise();
 	}
 }

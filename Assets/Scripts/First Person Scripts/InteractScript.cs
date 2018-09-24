@@ -37,6 +37,12 @@ public class InteractScript : MonoBehaviour
 		interactText = GameObject.FindGameObjectWithTag("InteractText").GetComponent<Text>();
 	}
 
+	public void Disable()
+	{
+		interactText.text = "";
+		this.enabled = false;
+	}
+
 	private void FixedUpdate()
 	{
 		if (_isInInteractableZone)
@@ -51,6 +57,12 @@ public class InteractScript : MonoBehaviour
 				if (interactable != null)
 				{
 					interactText.text = interactable.Text;
+
+					if (Input.GetAxis("Interact") > 0)
+					{
+						interactable.Interact();
+					}
+
 				}
 			}
 			else
